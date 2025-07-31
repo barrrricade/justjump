@@ -2,19 +2,23 @@
 
 Created by Desmond Ip
 
-A lightweight directory bookmarking tool for quick terminal navigation.
+A lightweight directory bookmarking tool for quick terminal navigation. Just a single bash script - no dependencies (except fzf).
 
 ## Description
 
 `jj` is a simple shell utility that helps you quickly navigate between directories using custom hotkeys. Unlike automatic directory jumpers, `jj` gives you explicit control over your saved locations.
 
+The entire utility is contained in a single bash script (`jj.sh`), making it easy to install, understand, and modify.
+
 ## Features
 
+- Single file implementation - just one bash script
 - Save current directory with custom hotkeys
 - Jump to saved locations instantly
 - Fuzzy search through saved locations
 - Human-readable storage format
 - Explicit control over saved locations
+- No complex installation or setup
 
 ## Usage
 
@@ -74,13 +78,21 @@ While [zoxide](https://github.com/ajeetdsouza/zoxide) is a powerful autojumper, 
    - Everyone gets same shortcuts
    - Good for standardizing project navigation
 
+5. **Simplicity**
+   - Single bash script (~100 lines)
+   - No compilation needed
+   - Easy to audit
+   - Easy to customize
+
 ## Installation
 
-1. Download `jj.sh`
+1. Download the single file `jj.sh`
 2. Add to your `.bashrc` or `.zshrc`:
 ```bash
 source /path/to/jj.sh
 ```
+
+That's it! No compilation, no package managers, no dependencies (except fzf for fuzzy finding).
 
 ## Requirements
 
