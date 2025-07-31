@@ -2,11 +2,11 @@
 
 Created by Desmond Ip
 
-A lightweight directory bookmarking tool for quick terminal navigation. Just a single bash script - no dependencies (except fzf).
+A lightweight directory bookmarking tool for quick terminal navigation. Just a single bash script with fzf for fuzzy finding.
 
 ## Description
 
-`jj` is a simple shell utility that helps you quickly navigate between directories using custom hotkeys. Unlike automatic directory jumpers, `jj` gives you explicit control over your saved locations.
+`jj` is a simple shell utility that helps you quickly navigate between directories using custom hotkeys. It provides explicit bookmarking functionality with memorable shortcuts.
 
 The entire utility is contained in a single bash script (`jj.sh`), making it easy to install, understand, and modify.
 
@@ -38,29 +38,21 @@ cd ~
 jj app           # Jump back to ~/projects/my-app
 ```
 
-## Comparison with Zoxide
+## Key Benefits
 
-While [zoxide](https://github.com/ajeetdsouza/zoxide) is a powerful autojumper, `jj` takes a different approach:
+1. **Explicit Bookmarking**
+   - Create memorable shortcuts for your important directories
+   - Custom hotkeys for frequently used locations
+   - Clear mapping between shortcuts and directories
 
-### How They Work
-- **jj**: Explicit bookmarking with custom hotkeys
-- **zoxide**: Automatic learning based on directory visits
-
-### Why Choose JJ Over Zoxide?
-
-1. **Explicit Control**
-   - No unwanted directories in your jump list
-   - You decide what gets saved
-   - No cleanup of unwanted entries needed
-
-2. **Predictable Hotkeys**
+2. **Predictable Navigation**
    ```bash
    jj -s work ~/work
    jj work        # Always goes to ~/work
    ```
-   - Hotkeys always map to the same location
-   - No confusion with similar directory names
-   - Better for muscle memory
+   - Shortcuts remain constant
+   - Easy to remember hotkeys
+   - Reliable navigation
 
 3. **Simple Storage**
    ```bash
@@ -92,7 +84,7 @@ While [zoxide](https://github.com/ajeetdsouza/zoxide) is a powerful autojumper, 
 source /path/to/jj.sh
 ```
 
-That's it! No compilation, no package managers, no dependencies (except fzf for fuzzy finding).
+That's it! No compilation or package managers needed.
 
 ## Requirements
 
